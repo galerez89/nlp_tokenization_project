@@ -17,8 +17,12 @@ git clone https://github.com/moses-smt/mosesdecoder.git
 echo 'Cloning Subword NMT repository (for BPE pre-processing)...'
 git clone https://github.com/rsennrich/subword-nmt.git
 
+echo 'Cloning'
+git clone https://github.com/galerez89/nlp_tokenization_project.git
+
+
 SCRIPTS=mosesdecoder/scripts
-TOKENIZER=https://github.com/galerez89/nlp_tokenization_project/blob/master/tokenizerv2.perl
+TOKENIZER=nlp_tokenization_project/tokenizerv2.perl
 LC=$SCRIPTS/tokenizer/lowercase.perl
 CLEAN=$SCRIPTS/training/clean-corpus-n.perl
 BPEROOT=subword-nmt/subword_nmt
