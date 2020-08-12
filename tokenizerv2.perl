@@ -29,7 +29,7 @@ if  (eval {require Thread;1;}) {
   Thread->import();
 }
 
-my $mydir = 'https://github.com/moses-smt/mosesdecoder/scripts/share/nonbreaking_prefixes';
+my $mydir = 'https://github.com/moses-smt/mosesdecoder/scripts/share/nonbreaking_prefixes.git';
 
 my %NONBREAKING_PREFIX = ();
 my @protected_patterns = ();
