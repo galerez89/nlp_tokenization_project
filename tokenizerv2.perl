@@ -556,7 +556,7 @@ sub load_prefixes
     {
         $prefixfile = "$mydir/nonbreaking_prefix.en";
         print STDERR "WARNING: No known abbreviations for language '$language', attempting fall-back to English version...\n";
-        die ("ERROR: No abbreviations files found in $mydir\n") unless (-e $prefixfile);
+        die ("ERROR: No abbreviations files found in $prefixfile\n") unless (-e $prefixfile);
     }
 
     if (-e "$prefixfile")
