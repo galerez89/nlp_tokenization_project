@@ -29,7 +29,7 @@ if  (eval {require Thread;1;}) {
   Thread->import();
 }
 
-my $mydir = "https://github.com/galerez89/nlp_tokenization_project";
+my $mydir = "https://github.com/galerez89/nlp_tokenization_project/tree/master/nonbreaking_prefixes";
 
 my %NONBREAKING_PREFIX = ();
 my @protected_patterns = ();
