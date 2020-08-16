@@ -13,7 +13,7 @@ git clone https://github.com/galerez89/nlp_tokenization_project.git
 
 
 SCRIPTS=mosesdecoder/scripts
-TOKENIZER=nlp_tokenization_project/tokenizerv2.perl
+TOKENIZER=nlp_tokenization_project/tokenizerv.perl
 LC=$SCRIPTS/tokenizer/lowercase.perl
 CLEAN=$SCRIPTS/training/clean-corpus-n.perl
 BPEROOT=subword-nmt/subword_nmt
