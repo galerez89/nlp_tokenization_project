@@ -28,9 +28,9 @@ if  (eval {require Thread;1;}) {
   #module loaded
   Thread->import();
 }
-
+my $dir = 'https://github.com/moses-smt/mosesdecoder/tree/master/scripts/share/nonbreaking_prefixes';
 use Git
-my $mydir = Git->repository (Directory => 'https://github.com/moses-smt/mosesdecoder/tree/master/scripts/share/nonbreaking_prefixes');
+my $mydir = Git::Repository->new( work_tree => $dir );
 
 my %NONBREAKING_PREFIX = ();
 my @protected_patterns = ();
