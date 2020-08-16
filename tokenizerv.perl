@@ -19,6 +19,7 @@ use warnings;
 binmode(STDIN, ":utf8");
 binmode(STDOUT, ":utf8");
 
+use Git::Repository;
 use warnings;
 use FindBin qw($RealBin);
 use strict;
@@ -28,9 +29,9 @@ if  (eval {require Thread;1;}) {
   #module loaded
   Thread->import();
 }
-my $dir = 'https://github.com/moses-smt/mosesdecoder/tree/master/scripts/share/nonbreaking_prefixes';
-use Git
-my $mydir = Git::Repository->new( work_tree => $dir );
+my $url = 'https://github.com/moses-smt/mosesdecoder/tree/master/scripts/share/nonbreaking_prefixes';
+Git::Repository->run( clone => $url => $mydir );
+$r = Git::Repository->new( work_tree => $mydir );
 
 my %NONBREAKING_PREFIX = ();
 my @protected_patterns = ();
