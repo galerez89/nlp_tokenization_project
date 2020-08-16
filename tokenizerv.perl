@@ -29,10 +29,10 @@ if  (eval {require Thread;1;}) {
   Thread->import();
 }
 
-echo 'Cloning Moses github repository (for tokenization scripts)...'
-git clone https://github.com/moses-smt/mosesdecoder.git
+$url = "https://github.com/moses-smt/mosesdecoder";
 
-my $mydir = "mosesdecoder/scripts/share/nonbreaking_prefixes";
+
+my $mydir = "$url/scripts/share/nonbreaking_prefixes";
 
 my %NONBREAKING_PREFIX = ();
 my @protected_patterns = ();
