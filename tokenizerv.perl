@@ -29,7 +29,7 @@ if  (eval {require Thread;1;}) {
   Thread->import();
 }
 
-$url = "https://github.com/moses-smt/mosesdecoder";
+my $url = "https://github.com/moses-smt/mosesdecoder";
 
 
 my $mydir = "$url/scripts/share/nonbreaking_prefixes";
